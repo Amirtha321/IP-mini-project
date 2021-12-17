@@ -128,3 +128,11 @@
     display: block;
   }
   
+  #header {
+    padding-top: 70px;
+  }
+
+  .intro-window {
+    width: 600px;
+    height: 600px;
+  }
