@@ -29,7 +29,7 @@ if ($con->query($sql) === TRUE) {
   <div class="container mt-5 formcontainer bg-light border border-light rounded-3 w-25">
     <div class="container p-5 rounded-3">
       <h1 class="p-5 text-center">Register</h1>
-      <form method="POST" action="add.php">
+      <form method="POST" action="">
         <div class="mb-3">
           <label for="exampleInputName" class="form-label">Name</label>
           <input type="text" name="name" class="form-control" id="exampleInputName" aria-describedby="emailHelp">

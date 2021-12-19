@@ -12,7 +12,7 @@
   <div class="container mt-5 formcontainer bg-light border border-light rounded-3 w-25">
     <div class="container p-5 rounded-3">
       <h1 class="p-5 text-center">Login</h1>
-      <form method="POST" action="check.php">
+      <form method="POST" action="">
       <div class="mb-3">
         <label for="exampleInputEmail1" class="form-label">Email address</label>
         <input type="email" name="name" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
