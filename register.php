@@ -1,20 +1,3 @@
-<?php
-include 'config.php';
-session_start();
-
-$name = $_POST["name"];
-$email = $_POST["email"];
-$pwd = $_POST["password"];
-
-$sql = "INSERT INTO customers(name, email, password) VALUES ('$name','$email','$pwd')";
-if ($con->query($sql) === TRUE) {
-    header('location: login.html');
-  } else {
-    echo "Error: " . $sql . "<br>" . $con->error;
-  }
-
-?>
-
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 
@@ -55,3 +38,20 @@ if ($con->query($sql) === TRUE) {
 </body>
 
 </html>
+
+<?php
+include 'config.php';
+session_start();
+
+$name = $_POST["name"];
+$email = $_POST["email"];
+$pwd = $_POST["password"];
+
+$sql = "INSERT INTO customers(name, email, password) VALUES ('$name','$email','$pwd')";
+if ($con->query($sql) === TRUE) {
+    header('location: login.html');
+  } else {
+    echo "Error: " . $sql . "<br>" . $con->error;
+  }
+
+?>
