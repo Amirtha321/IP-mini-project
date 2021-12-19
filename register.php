@@ -39,3 +39,27 @@
 
 </html>
 
+<?php
+$host = "localhost:3306"; 
+$user = "root"; 
+$password = ""; 
+$dbname = "cardealership"; 
+$con = new mysqli($host, $user, $password,$dbname);
+// Check connection
+if (!$con) {
+  die("Connection failed: " . mysqli_connect_error());
+}
+session_start();
+
+$name = $_POST["name"];
+$email = $_POST["email"];
+$pwd = $_POST["password"];
+
+$sql = "INSERT INTO customers(name, email, password) VALUES ('$name','$email','$pwd')";
+if ($con->query($sql) === TRUE) {
+    header('location: login.html');
+  } else {
+    echo "Error: " . $sql . "<br>" . $con->error;
+  }
+
+?> 
