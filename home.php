@@ -1,4 +1,4 @@
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en" dir="ltr">
 
 <head>
@@ -80,4 +80,4 @@
     crossorigin="anonymous"></script>
 </body>
 
-</html> -->
+</html>
