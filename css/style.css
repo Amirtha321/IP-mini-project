@@ -1,7 +1,9 @@
-body{
-    /* background-color:aqua !important; */
-}
+
 .carouselbox{
     height: 100px!important;
     width: 100% !important;
+}
+
+#cars{
+    background-color: aqua!important;
 }
