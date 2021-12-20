@@ -1,18 +1,18 @@
 <?php
 include 'config.php';
 session_start();
-
+if(isset($_POST['register'])){
 $name = $_POST["name"];
 $email = $_POST["email"];
 $pwd = $_POST["password"];
 
 $sql = "INSERT INTO customers(name, email, password) VALUES ('$name','$email','$pwd')";
 if ($con->query($sql) === TRUE) {
-    header('location: login.html');
+    // header('location: login.html');
   } else {
     echo "Error: " . $sql . "<br>" . $con->error;
   }
-
+}
 ?> 
 
 <!DOCTYPE html>
@@ -45,7 +45,7 @@ if ($con->query($sql) === TRUE) {
           <input type="password" name="password" class="form-control" id="exampleInputPassword1">
         </div>
 
-        <button type="submit" name="insert" class="btn btn-primary">Submit</button>
+        <button type="submit" name="register" class="btn btn-primary">Submit</button>
       </form>
     </div>
   </div>
