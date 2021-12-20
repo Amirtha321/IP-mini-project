@@ -12,7 +12,7 @@
 
 <body>
   
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark ps-5 sticky-lg-top">
+  <nav class="navbar navbar-expand-lg navbar-blue bg-dark ps-5 sticky-lg-top">
     <div class="container-fluid">
       <a class="navbar-brand h1" href="#">CARS</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -22,16 +22,16 @@
       <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
         <ul class="navbar-nav  mb-2 mb-lg-0 nav justify-content-end p-1 ">
           <li class="nav-item ps-1">
-            <a class="nav-link " aria-current="page" href="#">Home</a>
+            <a class="nav-link " aria-current="page" href="#header">Home</a>
           </li>
           <li class="nav-item ps-1">
-            <a class="nav-link " aria-current="page" href="#">Cars</a>
+            <a class="nav-link " aria-current="page" href="#cars">Cars</a>
           </li>
           <li class="nav-item ps-1">
-            <a class="nav-link " aria-current="page" href="#">About</a>
+            <a class="nav-link " aria-current="page" href="#about">About</a>
           </li>
           <li class="nav-item ps-1 pe-5">
-            <a class="nav-link " aria-current="page" href="#">Contact</a>
+            <a class="nav-link " aria-current="page" href="#contact">Contact</a>
           </li>
         </ul>
       </div>
@@ -76,21 +76,25 @@
 
   </section>
   <section id="cars">
-    <div class="container p-5">
+    <div class="container pt-5 ps-1 pe-1 pb-5">
 <h1 class="sectionhead">Cars Available</h1>
 <div class="container">
   <div class="row ">
-    <div class="col-lg-4 col-md-6">
+    <div class="col-lg-3 col-md-6">
       <img src="images/c1.webp " width=300 alt="">
       <button type="button" class="btn btn-outline-primary bt">Book Now</button>
     </div>
-    <div class="col-lg-4 col-md-6">
+    <div class="col-lg-3 col-md-6">
     <img src="images/c2.webp" width=300 alt="">
     <button type="button" class="btn btn-outline-primary bt">Book Now</button>
     </div>
-    <div class="col-lg-4 col-md-6">
+    <div class="col-lg-3 col-md-6">
     <img src="images/c3.jfif" width=300 alt="">
     <button type="button" class="btn btn-outline-primary bt">Book Now</button>
+    </div>
+    <div class="col-lg-3 col-md-6">
+      <img src="images/c1.webp " width=300 alt="">
+      <button type="button" class="btn btn-outline-primary bt">Book Now</button>
     </div>
   </div>
 </div>
@@ -126,7 +130,7 @@
                 <!-- Contact Section Heading-->
                 <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0 ">Contact Me</h2>
                 <!-- Icon Divider-->
-                <div class="divider-custom">
+                <div class="divider-custom p-3">
                     <div class="divider-custom-line"></div>
                     <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
                     <div class="divider-custom-line"></div>
