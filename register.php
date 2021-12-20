@@ -6,8 +6,7 @@ if(isset($_POST['register'])){
   $pwd = mysqli_real_escape_string($con,$_POST['password']); 
   $pwd = hash('sha256',$pwd);
   $name = $_POST["name"];
-// $email = $_POST["email"];
-// $pwd =  hash('sha256',$_POST["password"]);
+
 
 $sql = "INSERT INTO customers(name, email, password) VALUES ('$name','$email','$pwd')";
 if ($con->query($sql) === TRUE) {
@@ -17,6 +16,8 @@ if ($con->query($sql) === TRUE) {
   }
 }
 ?> 
+
+
 
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
