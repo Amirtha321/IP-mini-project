@@ -97,6 +97,24 @@
       <button type="button" class="btn btn-outline-primary bt">Book Now</button>
     </div>
   </div>
+  <div class="row ">
+    <div class="col-lg-3 col-md-6">
+      <img src="images/c1.webp " width=300 alt="">
+      <button type="button" class="btn btn-outline-primary bt">Book Now</button>
+    </div>
+    <div class="col-lg-3 col-md-6">
+    <img src="images/c2.webp" width=300 alt="">
+    <button type="button" class="btn btn-outline-primary bt">Book Now</button>
+    </div>
+    <div class="col-lg-3 col-md-6">
+    <img src="images/c3.jfif" width=300 alt="">
+    <button type="button" class="btn btn-outline-primary bt">Book Now</button>
+    </div>
+    <div class="col-lg-3 col-md-6">
+      <img src="images/c1.webp " width=300 alt="">
+      <button type="button" class="btn btn-outline-primary bt">Book Now</button>
+    </div>
+  </div>
 </div>
     </div>
   </section>
