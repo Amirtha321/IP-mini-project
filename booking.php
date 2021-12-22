@@ -116,8 +116,8 @@ if (isset($_POST['order'])) {
       <div class="container p-5">
         <form method="POST" action="">
         <div class="mb-3">
-            <label for="exampleInputphone" class="form-label">Model ID</label>
-            <input type="text" name="model" class="form-control" id="exampleInputphone" aria-describedby="emailHelp">
+            <!-- <label for="exampleInputphone" class="form-label">Model ID</label>
+            <input type="text" name="model" class="form-control" id="exampleInputphone" aria-describedby="emailHelp"> -->
             
           </div>
           <div class="mb-3">

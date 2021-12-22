@@ -72,7 +72,7 @@
       $sql = "SELECT * FROM orders WHERE phone = $phno ";
       $result = mysqli_query($con, $sql);
       $counter = 1;
-      echo '<div class = "container p-5" ><h1>Orders List</h1>';
+      echo '<div class = "container p-5" ><h1 class="p-3">Orders List</h1>';
       echo '<table class="table table-striped table-bordered ">';
       echo '<thead>
     <tr>
@@ -95,7 +95,7 @@
       mysqli_close($con);
     }
     else{
-      echo "<h1>No entries</h1>";
+      echo '<center><h1 class="p-5">No entries</h1></center>';
     }
       
       ?>

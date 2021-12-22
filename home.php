@@ -112,8 +112,8 @@ session_start();
       <div class="container">
         <div class="row ">
 
-          <div class="col-lg-3 col-md-6 pb-1">
-            <div class="card shadow-lg p-3 mb-5 bg-body rounded " style="width: 18rem;">
+          <div class="col-lg-3 col-md-6 pb-1 rounded-3 ">
+            <div class="card shadow-lg p-3 mb-5 bg-body rounded-3 " style="width: 18rem;">
               <img src="images/c1.webp" class="card-img-top" alt="car img">
               <div class="card-body">
                 <h5 class="card-title">BMW</h5>
@@ -123,8 +123,8 @@ session_start();
             </div>
 
           </div>
-          <div class="col-lg-3 col-md-6 pb-1">
-            <div class="card shadow-lg p-3 mb-5 bg-body rounded" style="width: 18rem;">
+          <div class="col-lg-3 col-md-6 pb-1 rounded-3">
+            <div class="card shadow-lg p-3 mb-5 bg-body rounded-3" style="width: 18rem;">
               <img src="images/c2.webp" class="card-img-top" alt="car img">
               <div class="card-body">
                 <h5 class="card-title">AUDI</h5>
@@ -133,8 +133,8 @@ session_start();
               </div>
             </div>
           </div>
-          <div class="col-lg-3 col-md-6 pb-1">
-            <div class="card shadow-lg p-3 mb-5 bg-body rounded" style="width: 18rem;">
+          <div class="col-lg-3 col-md-6 pb-1 rounded-3">
+            <div class="card shadow-lg p-3 mb-5 bg-body rounded-3" style="width: 18rem;">
               <img src="images/c3.jfif" class="card-img-top" alt="car img">
               <div class="card-body">
                 <h5 class="card-title">BENZ</h5>
@@ -143,8 +143,8 @@ session_start();
               </div>
             </div>
           </div>
-          <div class="col-lg-3 col-md-6 pb-1">
-            <div class="card shadow-lg p-3 mb-5 bg-body rounded" style="width: 18rem;">
+          <div class="col-lg-3 col-md-6 pb-1 rounded-3">
+            <div class="card shadow-lg p-3 mb-5 bg-body rounded-3" style="width: 18rem;">
               <img src="images/c1.webp" class="card-img-top" alt="car img">
               <div class="card-body">
                 <h5 class="card-title">TESLA</h5>
@@ -156,8 +156,8 @@ session_start();
 
         </div>
         <div class="row ">
-          <div class="col-lg-3 col-md-6 pt-1">
-            <div class="card shadow-lg p-3 mb-5 bg-body rounded" style="width: 18rem;">
+          <div class="col-lg-3 col-md-6 pt-1 rounded-3">
+            <div class="card shadow-lg p-3 mb-5 bg-body rounded-3" style="width: 18rem;">
               <img src="images/c2.webp" class="card-img-top" alt="car img">
               <div class="card-body">
                 <h5 class="card-title">TESLA</h5>
@@ -166,8 +166,8 @@ session_start();
               </div>
             </div>
           </div>
-          <div class="col-lg-3 col-md-6 pt-1">
-            <div class="card shadow p-3 mb-5 bg-body rounded" style="width: 18rem;">
+          <div class="col-lg-3 col-md-6 pt-1 rounded-3">
+            <div class="card shadow p-3 mb-5 bg-body rounded-3" style="width: 18rem;">
               <img src="images/c3.jfif" class="card-img-top" alt="car img">
               <div class="card-body">
                 <h5 class="card-title">BMW</h5>
@@ -176,8 +176,8 @@ session_start();
               </div>
             </div>
           </div>
-          <div class="col-lg-3 col-md-6 pt-1">
-            <div class="card shadow-lg p-3 mb-5 bg-body rounded" style="width: 18rem;">
+          <div class="col-lg-3 col-md-6 pt-1 rounded-3">
+            <div class="card shadow-lg p-3 mb-5 bg-body rounded-3" style="width: 18rem;">
               <img src="images/c1.webp" class="card-img-top" alt="car img">
               <div class="card-body">
                 <h5 class="card-title">FORD</h5>
@@ -186,8 +186,8 @@ session_start();
               </div>
             </div>
           </div>
-          <div class="col-lg-3 col-md-6 pb-1">
-            <div class="card shadow-lg p-3 mb-5 bg-body rounded" style="width: 18rem;">
+          <div class="col-lg-3 col-md-6 pb-1 rounded-3">
+            <div class="card shadow-lg p-3 mb-5 bg-body rounded-3" style="width: 18rem;">
               <img src="images/c2.webp" class="card-img-top" alt="car img">
               <div class="card-body">
                 <h5 class="card-title">BMW</h5>
