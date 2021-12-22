@@ -12,7 +12,7 @@
 
 <body class="bg-primary">
     <div class="container p-5 d-flex aligns-items-center justify-content-center rounded-3">
-        <div class="card text-center shadow p-5" style="width: 28rem;height: 18rem;">
+        <div class="card text-center shadow-lg p-5" style="width: 28rem;height: 18rem;">
             <div class="card-body">
                 <h1 class="card-title ">Order Successful</h1>
                 <h5 class="card-text p-3">Your booking id: <?php echo(rand(10000,100000));?>  </h5>
