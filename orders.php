@@ -1,30 +1,3 @@
-<?php
-// include 'config.php';
-// session_start();
-//  if(isset($_POST['login'])){
-//   $email = mysqli_real_escape_string($con,$_POST['email']);
-//   $pwd = mysqli_real_escape_string($con,$_POST['password']); 
-//   $pwd = hash('sha256',$pwd);
-//   $query = "SELECT * FROM orders WHERE email='$email' && password='$pwd'";
-//   $result = mysqli_query($con, $query);
-//   $num = mysqli_num_rows($result);   
-
-//   // $email = $_POST["email"];
-//   // $pwd =  password_hash($_POST["password"], PASSWORD_DEFAULT);
-//   // $sql = "SELECT * FROM customers WHERE email='$email' && password='$pwd'";
-//   // $result = mysqli_query($con, $sql);
-//   //       $num = mysqli_num_rows($result);     
-//         if($num == 1){
-//             header('location:home.php');
-//         }
-//         else{
-//             echo '<script>alert("Wrong Credentials")</script>';    
-
-//         }
-//  }
-
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -66,15 +39,15 @@
     <div class="container">
       <?php
       session_start();
-      if (isset($_SESSION['phone'])){
-      $phno = $_SESSION['phone'];
-      include 'config.php';
-      $sql = "SELECT * FROM orders WHERE phone = $phno ";
-      $result = mysqli_query($con, $sql);
-      $counter = 1;
-      echo '<div class = "container p-5" ><h1 class="p-3">Orders List</h1>';
-      echo '<table class="table table-striped table-bordered ">';
-      echo '<thead>
+      if (isset($_SESSION['phone'])) {
+        $phno = $_SESSION['phone'];
+        include 'config.php';
+        $sql = "SELECT * FROM orders WHERE phone = $phno ";
+        $result = mysqli_query($con, $sql);
+        $counter = 1;
+        echo '<div class = "container p-5" ><h1 class="p-3">Orders List</h1>';
+        echo '<table class="table table-striped table-bordered ">';
+        echo '<thead>
     <tr>
       <th scope="col">S.No</th>
       <th scope="col">Model ID</th>
@@ -84,20 +57,19 @@
       
     </tr>
   </thead>';
-  echo'</div>';
+        echo '</div>';
 
-      while ($row = mysqli_fetch_array($result)) {
-        echo "<tr><td>" . $counter . "</td><td>" . $row['id'] . "</td><td>" . $row['address'] . "</td><td>" . $row['city'] . "</td>   <td>" . $row['pin'] . "</td>   </tr>";
-        $counter++;
+        while ($row = mysqli_fetch_array($result)) {
+          echo "<tr><td>" . $counter . "</td><td>" . $row['id'] . "</td><td>" . $row['address'] . "</td><td>" . $row['city'] . "</td>   <td>" . $row['pin'] . "</td>   </tr>";
+          $counter++;
+        }
+
+        echo "</table>";
+        mysqli_close($con);
+      } else {
+        echo '<center><h1 class="p-5">No entries</h1></center>';
       }
 
-      echo "</table>";
-      mysqli_close($con);
-    }
-    else{
-      echo '<center><h1 class="p-5">No entries</h1></center>';
-    }
-      
       ?>
     </div>
   </section>

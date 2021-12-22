@@ -82,43 +82,41 @@ if (isset($_POST['order'])) {
         </p>
         <h4 class=" pt-4">Specifications:</h4>
         <table class="table ">
-          
-        
+
+
           <tbody>
             <tr>
               <th scope="row">Brand</th>
               <td>BMW</td>
-              
+
             </tr>
             <tr>
               <th scope="row">Model Name</th>
               <td>Model S</td>
-              
+
             </tr>
             <tr>
               <th scope="row">Material</th>
               <td>Steel</td>
-              
+
             </tr>
             <tr>
               <th scope="row">Colour</th>
               <td>Red</td>
-              
+
             </tr>
-            
+
           </tbody>
         </table>
-        <!-- <button type="button" class="btn btn-primary bt">Book Now</button> -->
       </div>
     </div>
 
     <section id="order-form">
       <div class="container p-5">
         <form method="POST" action="">
-        <div class="mb-3">
+          <div class="mb-3">
             <!-- <label for="exampleInputphone" class="form-label">Model ID</label>
             <input type="text" name="model" class="form-control" id="exampleInputphone" aria-describedby="emailHelp"> -->
-            
           </div>
           <div class="mb-3">
             <label for="exampleInputphone" class="form-label">Phone number</label>
@@ -144,56 +142,7 @@ if (isset($_POST['order'])) {
 
     </section>
 
-    <!-- Button trigger modal -->
-
-
-    <!-- Modal -->
-    <!-- <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Order Details</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            <form method="get" action="">
-              <div class="mb-3">
-                <label for="exampleInputContact" class="form-label">Phone number</label>
-                <input type="text" name="phone" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                <div id="emailHelp" class="form-text">Provide your phone number for more info.</div>
-              </div>
-              <div class="mb-3">
-                <label for="exampleCarName" class="form-label">Address</label>
-                <input type="text" name="address" class="form-control" id="exampleName" aria-describedby="emailHelp">
-                <div id="emailHelp" class="form-text">Enter your Address</div>
-              </div>
-              <div class="mb-3">
-                <label for="exampleInputPassword1" class="form-label">City</label>
-                <input type="text" name="city" class="form-control" id="exampleInputPassword1">
-              </div>
-              <div class="mb-3">
-                <label for="exampleInputPassword1" class="form-label">Pincode</label>
-                <input type="text" name="pin" class="form-control" id="exampleInputPassword1">
-              </div>
-
-            </form>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-            <input type="submit" id="ord" name="order" value="Confirm" class="btn btn-primary"  form="modal-details">
-            
-          </div>
-        </div>
-      </div>
-    </div> -->
-
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.js"></script>
-    <script type="text/javascript">
-  function form_submit() {
-    document.getElementById("ord").submit();
-   }  </script> -->
 </body>
 
 </html>

@@ -1,10 +1,5 @@
 <?php
-
 session_start();
-// if (!isset($_SESSION['uname'])) {
-//   header('location:login.php');
-// }
-
 ?>
 
 <!DOCTYPE html>
@@ -42,10 +37,7 @@ session_start();
               <?php
               if (isset($_SESSION['uname'])) {
                 echo ' <li>
-                <p class="dropdown-item">Welcome,
-
-                                                  ' . $_SESSION["uname"] . '
-                                                  </p>
+                <p class="dropdown-item">Welcome, ' . $_SESSION["uname"] . '  </p>
               </li>
               <li><a class="dropdown-item" href="orders.php">My orders</a></li>
               <li><a class="dropdown-item" href="logout.php" >Log out</a></li>';
@@ -54,8 +46,6 @@ session_start();
               <li><a class="dropdown-item" href="login.php" >Log In</a></li>';
               }
               ?>
-
-
 
 
             </ul>
@@ -80,7 +70,7 @@ session_start();
         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-   
+
       </div>
       <div class="carousel-inner">
         <div class="carousel-item active" data-bs-interval="1500">
@@ -92,7 +82,7 @@ session_start();
         <div class="carousel-item" data-bs-interval="1500">
           <img src="images/banner-image-3.jpg" class="d-block w-100" alt="...">
         </div>
-       
+
       </div>
       <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -235,7 +225,7 @@ session_start();
 
       <div class="row justify-content-center">
         <div class="col-lg-8 col-xl-7">
-          <form id="contactForm" >
+          <form id="contactForm">
 
             <div class="form-floating mb-3">
               <input class="form-control" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
