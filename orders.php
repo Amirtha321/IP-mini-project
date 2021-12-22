@@ -19,7 +19,7 @@
 //         }
 //         else{
 //             echo '<script>alert("Wrong Credentials")</script>';    
-    
+
 //         }
 //  }
 
@@ -27,14 +27,17 @@
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>orders</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <title>orders</title>
 </head>
+
 <body>
-<nav class="navbar navbar-expand-lg navbar-blue bg-dark ps-5 sticky-lg-top">
+  <nav class="navbar navbar-expand-lg navbar-blue bg-dark ps-5 sticky-lg-top">
     <div class="container-fluid">
       <a class="navbar-brand h1" href="#">CARS</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -59,5 +62,28 @@
     </div>
   </nav>
 
+  <section id="table">
+    <div class="container">
+      <?php
+      session_start();
+
+      include 'config.php';
+      $sql = "SELECT * FROM orders WHERE phone = $_SESSION['phone'] ";
+      $result = mysqli_query($con, $sql);
+      echo mysqli_num_rows($result);
+
+      echo '<table class="table">'; 
+
+      while ($row = mysqli_fetch_array($result)) {   
+        echo "<tr><td>" . $row['address'] . "</td><td>" . $row['city'] . "</td>   <td>" . $row['pin'] . "</td>   </tr>"; 
+      }
+
+      echo "</table>"; 
+      mysqli_close($con);
+      ?>
+    </div>
+  </section>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
+
 </html>

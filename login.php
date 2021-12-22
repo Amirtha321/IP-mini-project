@@ -1,7 +1,9 @@
 <?php
 include 'config.php';
 session_start();
+
  if(isset($_POST['login'])){
+  $name = $_POST["name"];
   $email = mysqli_real_escape_string($con,$_POST['email']);
   $pwd = mysqli_real_escape_string($con,$_POST['password']); 
   $pwd = hash('sha256',$pwd);
@@ -15,6 +17,7 @@ session_start();
   // $result = mysqli_query($con, $sql);
   //       $num = mysqli_num_rows($result);     
         if($num == 1){
+          $_SESSION["uname"] = $name;
             header('location:home.php');
         }
         else{
@@ -24,6 +27,7 @@ session_start();
  }
 
 ?>
+
 
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
@@ -40,6 +44,11 @@ session_start();
     <div class="container p-5 rounded-3">
       <h1 class="p-5 text-center">Login</h1>
       <form method="POST" action="">
+      <div class="mb-3">
+          <label for="exampleInputName" class="form-label">Name</label>
+          <input type="text" name="name" class="form-control" id="exampleInputName" aria-describedby="emailHelp">
+          <div id="emailHelp" class="form-text">Enter your full name</div>
+        </div>
       <div class="mb-3">
         <label for="exampleInputEmail1" class="form-label">Email address</label>
         <input type="email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">

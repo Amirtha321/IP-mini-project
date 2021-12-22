@@ -1,3 +1,12 @@
+<?php
+
+session_start();
+if (!isset($_SESSION['uname'])) {
+  header('location:login.php');
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 
@@ -30,7 +39,12 @@
               Account
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="#">My orders</a></li>
+              <li>
+                <p class="dropdown-item">Welcome,<?php
+                  
+                  echo "$_SESSION[uname]";
+                  ?></p> </li>
+              <li><a class="dropdown-item" href="orders.php">My orders</a></li>
               <li><a class="dropdown-item" href="login.php">Log out</a></li>
 
 

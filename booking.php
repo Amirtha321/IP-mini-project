@@ -11,6 +11,7 @@ if (isset($_POST['order'])) {
 
   $sql = "INSERT INTO orders(phone, address, city, pin) VALUES ('$phone','$address','$city','$pin')";
   if ($con->query($sql) === TRUE) {
+    $_SESSION['phone'] = $phone;
     header('location: success.html');
   } else {
     echo "Error: " . $sql . "<br>" . $con->error;

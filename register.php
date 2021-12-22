@@ -1,15 +1,17 @@
 <?php
 include 'config.php';
 session_start();
+
 if(isset($_POST['register'])){
   $email = mysqli_real_escape_string($con,$_POST['email']);
   $pwd = mysqli_real_escape_string($con,$_POST['password']); 
   $pwd = hash('sha256',$pwd);
   $name = $_POST["name"];
 
-
+  
 $sql = "INSERT INTO customers(name, email, password) VALUES ('$name','$email','$pwd')";
 if ($con->query($sql) === TRUE) {
+  
     header('location: login.php');
   } else {
     echo "Error: " . $sql . "<br>" . $con->error;
