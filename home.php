@@ -56,16 +56,20 @@
         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
       </div>
       <div class="carousel-inner">
-        <div class="carousel-item active" data-bs-interval="500">
+        <div class="carousel-item active" data-bs-interval="1000">
           <img src="banner-image-2.jpg" class="d-block w-100" alt="...">
         </div>
-        <div class="carousel-item " data-bs-interval="500">
+        <div class="carousel-item " data-bs-interval="1000">
           <img src="banner-image-1.jpg" class="d-block w-100" alt="...">
         </div>
-        <div class="carousel-item" data-bs-interval="500">
+        <div class="carousel-item" data-bs-interval="1000">
           <img src="banner-image-2.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item " data-bs-interval="1000">
+          <img src="banner-image-1.jpg" class="d-block w-100" alt="...">
         </div>
       </div>
       <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -82,48 +86,48 @@
   </section>
   <section id="cars">
     <div class="container pt-5 ps-1 pe-1 pb-5">
-      <h1 class="sectionhead">Cars Available</h1>
+      <h1 class="sectionhead pb-5">Cars Available</h1>
       <div class="container">
         <div class="row ">
 
           <div class="col-lg-3 col-md-6 pb-1">
-            <div class="card " style="width: 18rem;">
+            <div class="card shadow-lg p-3 mb-5 bg-body rounded " style="width: 18rem;">
               <img src="images/c1.webp" class="card-img-top" alt="car img">
               <div class="card-body">
                 <h5 class="card-title">BMW</h5>
                 <p class="card-text">Model S deluxe</p>
-                <a href="booking.php" class="btn btn-primary">Book Now</a>
+                <a href="booking.php?img=images/c1.webp" class="btn btn-primary">Book Now</a>
               </div>
             </div>
 
           </div>
           <div class="col-lg-3 col-md-6 pb-1">
-            <div class="card " style="width: 18rem;">
+            <div class="card shadow-lg p-3 mb-5 bg-body rounded" style="width: 18rem;">
               <img src="images/c2.webp" class="card-img-top" alt="car img">
               <div class="card-body">
                 <h5 class="card-title">BMW</h5>
                 <p class="card-text">Model S deluxe</p>
-                <a href="booking.php" class="btn btn-primary">Book Now</a>
+                <a href="booking.php?img=images/c2.webp" class="btn btn-primary">Book Now</a>
               </div>
             </div>
           </div>
           <div class="col-lg-3 col-md-6 pb-1">
-            <div class="card " style="width: 18rem;">
+            <div class="card shadow-lg p-3 mb-5 bg-body rounded" style="width: 18rem;">
               <img src="images/c3.jfif" class="card-img-top" alt="car img">
               <div class="card-body">
                 <h5 class="card-title">BMW</h5>
                 <p class="card-text">Model S deluxe</p>
-                <a href="booking.php" class="btn btn-primary">Book Now</a>
+                <a href="booking.php?img=images/c3.jfif" class="btn btn-primary">Book Now</a>
               </div>
             </div>
           </div>
           <div class="col-lg-3 col-md-6 pb-1">
-            <div class="card " style="width: 18rem;">
+            <div class="card shadow-lg p-3 mb-5 bg-body rounded" style="width: 18rem;">
               <img src="images/c1.webp" class="card-img-top" alt="car img">
               <div class="card-body">
                 <h5 class="card-title">BMW</h5>
                 <p class="card-text">Model S deluxe</p>
-                <a href="booking.php" class="btn btn-primary">Book Now</a>
+                <a href="booking.php?img=images/c1.webp" class="btn btn-primary">Book Now</a>
               </div>
             </div>
           </div>
@@ -131,42 +135,42 @@
         </div>
         <div class="row ">
           <div class="col-lg-3 col-md-6 pt-1">
-            <div class="card " style="width: 18rem;">
+            <div class="card shadow-lg p-3 mb-5 bg-body rounded" style="width: 18rem;">
               <img src="images/c2.webp" class="card-img-top" alt="car img">
               <div class="card-body">
                 <h5 class="card-title">BMW</h5>
                 <p class="card-text">Model S deluxe</p>
-                <a href="booking.php" class="btn btn-primary">Book Now</a>
+                <a href="booking.php?img=images/c2.webp" class="btn btn-primary">Book Now</a>
               </div>
             </div>
           </div>
           <div class="col-lg-3 col-md-6 pt-1">
-            <div class="card " style="width: 18rem;">
+            <div class="card shadow p-3 mb-5 bg-body rounded" style="width: 18rem;">
               <img src="images/c3.jfif" class="card-img-top" alt="car img">
               <div class="card-body">
                 <h5 class="card-title">BMW</h5>
                 <p class="card-text">Model S deluxe</p>
-                <a href="booking.php" class="btn btn-primary">Book Now</a>
+                <a href="booking.php?img=images/c3.jfif" class="btn btn-primary">Book Now</a>
               </div>
             </div>
           </div>
           <div class="col-lg-3 col-md-6 pt-1">
-            <div class="card " style="width: 18rem;">
+            <div class="card shadow-lg p-3 mb-5 bg-body rounded" style="width: 18rem;">
               <img src="images/c1.webp" class="card-img-top" alt="car img">
               <div class="card-body">
                 <h5 class="card-title">BMW</h5>
                 <p class="card-text">Model S deluxe</p>
-                <a href="booking.php" class="btn btn-primary">Book Now</a>
+                <a href="booking.php?img=images/c1.webp" class="btn btn-primary">Book Now</a>
               </div>
             </div>
           </div>
           <div class="col-lg-3 col-md-6 pb-1">
-            <div class="card " style="width: 18rem;">
+            <div class="card shadow-lg p-3 mb-5 bg-body rounded" style="width: 18rem;">
               <img src="images/c2.webp" class="card-img-top" alt="car img">
               <div class="card-body">
                 <h5 class="card-title">BMW</h5>
                 <p class="card-text">Model S deluxe</p>
-                <a href="booking.php" class="btn btn-primary">Book Now</a>
+                <a href="booking.php?img=images/c2.webp" class="btn btn-primary">Book Now</a>
               </div>
             </div>
           </div>
@@ -176,7 +180,7 @@
     </div>
   </section>
 
-  <section class="page-section bg-dark text-white mb-0" id="about">
+  <section class="page-section bg-dark text-white mb-0 p-5" id="about">
     <div class="container p-5">
 
       <h2 class="page-section-heading text-center text-uppercase text-white">About</h2>

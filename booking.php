@@ -1,4 +1,5 @@
 <?php
+$img_url = $_GET['img']; 
 include 'config.php';
 session_start();
 if (isset($_POST['order'])) {
@@ -10,7 +11,7 @@ if (isset($_POST['order'])) {
 
   $sql = "INSERT INTO orders(phone, address, city, pin) VALUES ('$phone','$address','$city','$pin')";
   if ($con->query($sql) === TRUE) {
-    header('location: order_success.html');
+    header('location: success.html');
   } else {
     echo "Error: " . $sql . "<br>" . $con->error;
   }
@@ -64,7 +65,7 @@ if (isset($_POST['order'])) {
     <div class="row ">
       <div class="col-lg-6 col-md-6">
         <h1 class="sectionhead">BMW Model S</h1>
-        <img src="images/c1.webp " width=500 alt="">
+        <img src=<?php echo "$img_url" ?> width="500" alt="">
 
       </div>
       <div class="col-lg-6 col-md-6">
