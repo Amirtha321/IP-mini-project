@@ -1,5 +1,6 @@
 <?php
-$img_url = $_GET['img']; 
+$img_url = $_GET['img'];
+$car_name = $_GET['car'];
 include 'config.php';
 session_start();
 if (isset($_POST['order'])) {
@@ -64,45 +65,83 @@ if (isset($_POST['order'])) {
 
   <div class="container pt-5">
     <div class="row ">
-      <div class="col-lg-6 col-md-6">
-        <h1 class="sectionhead">BMW Model S</h1>
+      <div class="col-lg-6 ">
+        <h1 class="sectionhead"><?php echo "$car_name" ?></h1>
         <img src=<?php echo "$img_url" ?> width="500" alt="">
 
       </div>
-      <div class="col-lg-6 col-md-6">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Diam donec adipiscing tristique risus nec feugiat in fermentum. Et pharetra pharetra massa massa ultricies mi quis hendrerit dolor. Ac felis donec et odio pellentesque diam volutpat. Ut etiam sit amet nisl. Eros donec ac odio tempor orci dapibus ultrices in iaculis. Sem fringilla ut morbi tincidunt augue interdum velit. Turpis massa tincidunt dui ut ornare. Mattis rhoncus urna neque viverra justo nec ultrices. Mi tempus imperdiet nulla malesuada pellentesque elit. Diam in arcu cursus euismod quis viverra nibh cras. Condimentum vitae sapien pellentesque habitant morbi tristique senectus et.
-          Amet volutpat consequat mauris nunc congue. Sit amet aliquam id diam maecenas ultricies. Elementum pulvinar etiam non quam lacus. Enim sit amet venenatis urna cursus eget nunc scelerisque. Mollis aliquam ut porttitor leo a. Sapien et ligula ullamcorper malesuada proin. Lorem dolor sed viverra ipsum. Mollis aliquam ut porttitor leo. Lobortis feugiat vivamus at augue eget arcu dictum varius duis. Non diam phasellus vestibulum lorem sed.
-          
+      <div class="col-lg-6">
+        <h4 class=" pt-2">Price: ₹ 49,99,999</h4>
+        <h4 class=" pt-4">About this item: </h4>
+        <p>
+        <ul>
+          <li>Made of Fine Metal . The Material of the car is used to give it absolutely clear finish </li>
+          <li>Original Sport Car Look, 4 Wheel Drive , 6 Doors Can be Opened </li>
+          <li>Lights and Music : Front and Tail lights & Sounds when doors are opened. </li>
+        </ul>
         </p>
+        <h4 class=" pt-4">Specifications:</h4>
+        <table class="table ">
+          
+        
+          <tbody>
+            <tr>
+              <th scope="row">Brand</th>
+              <td>BMW</td>
+              
+            </tr>
+            <tr>
+              <th scope="row">Model Name</th>
+              <td>Model S</td>
+              
+            </tr>
+            <tr>
+              <th scope="row">Material</th>
+              <td>Steel</td>
+              
+            </tr>
+            <tr>
+              <th scope="row">Colour</th>
+              <td>Red</td>
+              
+            </tr>
+            
+          </tbody>
+        </table>
         <!-- <button type="button" class="btn btn-primary bt">Book Now</button> -->
       </div>
     </div>
 
     <section id="order-form">
-    <div class="container p-5"> 
-    <form method="POST" action="">
-              <div class="mb-3">
-                <label for="exampleInputContact" class="form-label">Phone number</label>
-                <input type="text" name="phone" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                <div id="emailHelp" class="form-text">Provide your phone number for more info.</div>
-              </div>
-              <div class="mb-3">
-                <label for="exampleCarName" class="form-label">Address</label>
-                <input type="text" name="address" class="form-control" id="exampleName" aria-describedby="emailHelp">
-                <div id="emailHelp" class="form-text">Enter your Address</div>
-              </div>
-              <div class="mb-3">
-                <label for="exampleInputPassword1" class="form-label">City</label>
-                <input type="text" name="city" class="form-control" id="exampleInputPassword1">
-              </div>
-              <div class="mb-3">
-                <label for="exampleInputPassword1" class="form-label">Pincode</label>
-                <input type="text" name="pin" class="form-control" id="exampleInputPassword1">
-              </div>
-              <input type="submit" name="order" value="Confirm Booking" class="btn btn-primary">
-            </form>
-    </div>
-    
+      <div class="container p-5">
+        <form method="POST" action="">
+        <div class="mb-3">
+            <label for="exampleInputphone" class="form-label">Model ID</label>
+            <input type="text" name="model" class="form-control" id="exampleInputphone" aria-describedby="emailHelp">
+            
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputphone" class="form-label">Phone number</label>
+            <input type="text" name="phone" class="form-control" id="exampleInputphone" aria-describedby="emailHelp">
+            <div id="emailHelp" class="form-text">Provide your phone number for more info.</div>
+          </div>
+          <div class="mb-3">
+            <label for="exampleCarName" class="form-label">Address</label>
+            <input type="text" name="address" class="form-control" id="exampleName" aria-describedby="emailHelp">
+            <div id="emailHelp" class="form-text">Enter your Address</div>
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">City</label>
+            <input type="text" name="city" class="form-control" id="exampleInputPassword1">
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Pincode</label>
+            <input type="text" name="pin" class="form-control" id="exampleInputPassword1">
+          </div>
+          <input type="submit" name="order" value="Confirm Booking" class="btn btn-primary">
+        </form>
+      </div>
+
     </section>
 
     <!-- Button trigger modal -->

@@ -22,7 +22,7 @@ session_start();
 
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark ps-5 sticky-lg-top color">
     <div class="container-fluid">
-      <a class="navbar-brand h1" href="#">CAR BOOKING</a>
+      <a class="navbar-brand h1" href="#">FLASH CARS</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -44,14 +44,13 @@ session_start();
                 echo ' <li>
                 <p class="dropdown-item">Welcome,
 
-                                                  '. $_SESSION["uname"].'
+                                                  ' . $_SESSION["uname"] . '
                                                   </p>
               </li>
               <li><a class="dropdown-item" href="orders.php">My orders</a></li>
               <li><a class="dropdown-item" href="logout.php" >Log out</a></li>';
-              }
-              else{
-               echo' <li><a class="dropdown-item" href="register.php">Register</a></li>
+              } else {
+                echo ' <li><a class="dropdown-item" href="register.php">Register</a></li>
               <li><a class="dropdown-item" href="login.php" >Log In</a></li>';
               }
               ?>
@@ -81,21 +80,19 @@ session_start();
         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+   
       </div>
       <div class="carousel-inner">
-        <div class="carousel-item active" data-bs-interval="1000">
-          <img src="banner-image-2.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-item active" data-bs-interval="1500">
+          <img src="images/banner-image-2.jpg" class="d-block w-100" alt="...">
         </div>
-        <div class="carousel-item " data-bs-interval="1000">
-          <img src="banner-image-1.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-item " data-bs-interval="1500">
+          <img src="images/banner-image-1.jpg" class="d-block w-100" alt="...">
         </div>
-        <div class="carousel-item" data-bs-interval="1000">
-          <img src="banner-image-2.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-item" data-bs-interval="1500">
+          <img src="images/banner-image-3.jpg" class="d-block w-100" alt="...">
         </div>
-        <div class="carousel-item " data-bs-interval="1000">
-          <img src="banner-image-1.jpg" class="d-block w-100" alt="...">
-        </div>
+       
       </div>
       <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -120,8 +117,8 @@ session_start();
               <img src="images/c1.webp" class="card-img-top" alt="car img">
               <div class="card-body">
                 <h5 class="card-title">BMW</h5>
-                <p class="card-text">Model S deluxe</p>
-                <a href="booking.php?img=images/c1.webp" class="btn btn-primary">Book Now</a>
+                <p class="card-text">Model S </p>
+                <a href="booking.php?img=images/c1.webp&car=BMW-Model-S" class="btn btn-primary">Book Now</a>
               </div>
             </div>
 
@@ -130,9 +127,9 @@ session_start();
             <div class="card shadow-lg p-3 mb-5 bg-body rounded" style="width: 18rem;">
               <img src="images/c2.webp" class="card-img-top" alt="car img">
               <div class="card-body">
-                <h5 class="card-title">BMW</h5>
-                <p class="card-text">Model S deluxe</p>
-                <a href="booking.php?img=images/c2.webp" class="btn btn-primary">Book Now</a>
+                <h5 class="card-title">AUDI</h5>
+                <p class="card-text">Model A7</p>
+                <a href="booking.php?img=images/c2.webp&car=AUDI-Model-A7" class="btn btn-primary">Book Now</a>
               </div>
             </div>
           </div>
@@ -140,9 +137,9 @@ session_start();
             <div class="card shadow-lg p-3 mb-5 bg-body rounded" style="width: 18rem;">
               <img src="images/c3.jfif" class="card-img-top" alt="car img">
               <div class="card-body">
-                <h5 class="card-title">BMW</h5>
-                <p class="card-text">Model S deluxe</p>
-                <a href="booking.php?img=images/c3.jfif" class="btn btn-primary">Book Now</a>
+                <h5 class="card-title">BENZ</h5>
+                <p class="card-text">Model Y </p>
+                <a href="booking.php?img=images/c3.jfif&car=BENZ-Model-Y" class="btn btn-primary">Book Now</a>
               </div>
             </div>
           </div>
@@ -150,9 +147,9 @@ session_start();
             <div class="card shadow-lg p-3 mb-5 bg-body rounded" style="width: 18rem;">
               <img src="images/c1.webp" class="card-img-top" alt="car img">
               <div class="card-body">
-                <h5 class="card-title">BMW</h5>
-                <p class="card-text">Model S deluxe</p>
-                <a href="booking.php?img=images/c1.webp" class="btn btn-primary">Book Now</a>
+                <h5 class="card-title">TESLA</h5>
+                <p class="card-text">Model S </p>
+                <a href="booking.php?img=images/c1.webp&car=TESLA-Model-S" class="btn btn-primary">Book Now</a>
               </div>
             </div>
           </div>
@@ -163,9 +160,9 @@ session_start();
             <div class="card shadow-lg p-3 mb-5 bg-body rounded" style="width: 18rem;">
               <img src="images/c2.webp" class="card-img-top" alt="car img">
               <div class="card-body">
-                <h5 class="card-title">BMW</h5>
-                <p class="card-text">Model S deluxe</p>
-                <a href="booking.php?img=images/c2.webp" class="btn btn-primary">Book Now</a>
+                <h5 class="card-title">TESLA</h5>
+                <p class="card-text">Model Y</p>
+                <a href="booking.php?img=images/c2.webp&car=TESLA-Model-Y" class="btn btn-primary">Book Now</a>
               </div>
             </div>
           </div>
@@ -174,8 +171,8 @@ session_start();
               <img src="images/c3.jfif" class="card-img-top" alt="car img">
               <div class="card-body">
                 <h5 class="card-title">BMW</h5>
-                <p class="card-text">Model S deluxe</p>
-                <a href="booking.php?img=images/c3.jfif" class="btn btn-primary">Book Now</a>
+                <p class="card-text">Model V </p>
+                <a href="booking.php?img=images/c3.jfif&car=BMW-Model-V" class="btn btn-primary">Book Now</a>
               </div>
             </div>
           </div>
@@ -183,9 +180,9 @@ session_start();
             <div class="card shadow-lg p-3 mb-5 bg-body rounded" style="width: 18rem;">
               <img src="images/c1.webp" class="card-img-top" alt="car img">
               <div class="card-body">
-                <h5 class="card-title">BMW</h5>
-                <p class="card-text">Model S deluxe</p>
-                <a href="booking.php?img=images/c1.webp" class="btn btn-primary">Book Now</a>
+                <h5 class="card-title">FORD</h5>
+                <p class="card-text">Model S </p>
+                <a href="booking.php?img=images/c1.webp&car=FORD-Model-S" class="btn btn-primary">Book Now</a>
               </div>
             </div>
           </div>
@@ -194,8 +191,8 @@ session_start();
               <img src="images/c2.webp" class="card-img-top" alt="car img">
               <div class="card-body">
                 <h5 class="card-title">BMW</h5>
-                <p class="card-text">Model S deluxe</p>
-                <a href="booking.php?img=images/c2.webp" class="btn btn-primary">Book Now</a>
+                <p class="card-text">Model C </p>
+                <a href="booking.php?img=images/c2.webp&car=BMW-Model-C" class="btn btn-primary">Book Now</a>
               </div>
             </div>
           </div>
@@ -218,10 +215,10 @@ session_start();
 
       <div class="row">
         <div class="col-lg-4 ms-auto">
-          <p class="lead">Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional SASS stylesheets for easy customization.</p>
+          <p class="lead p-2">We here at Flash Cars private limited care about our customers so we assure that all cars are of superior quality and maintained well. We provide cars that are safe and strong. Our company's goal is to make the world a better place by increasing the standards of automobiles</p>
         </div>
-        <div class="col-lg-4 me-auto">
-          <p class="lead">You can create your own custom avatar for the masthead, change the icon in the dividers, and add your email address to the contact form to make it fully functional!</p>
+        <div class="col-lg-4 me-auto p-2">
+          <p class="lead">Our company "Flash Cars" was founded by Akhash in 2021. Our company's motto is " Make Cars Available For Everyone". We aim at selling quality cars at affordable prices </p>
         </div>
       </div>
 
@@ -238,7 +235,7 @@ session_start();
 
       <div class="row justify-content-center">
         <div class="col-lg-8 col-xl-7">
-          <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+          <form id="contactForm" >
 
             <div class="form-floating mb-3">
               <input class="form-control" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
@@ -264,20 +261,6 @@ session_start();
               <label for="message">Message</label>
               <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
             </div>
-
-            <div class="d-none" id="submitSuccessMessage">
-              <div class="text-center mb-3">
-                <div class="fw-bolder">Form submission successful!</div>
-                To activate this form, sign up at
-                <br />
-                <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
-              </div>
-            </div>
-
-            <div class="d-none" id="submitErrorMessage">
-              <div class="text-center text-danger mb-3">Error sending message!</div>
-            </div>
-
             <button class="btn btn-primary btn-xl disabled" id="submitButton" type="submit">Send</button>
           </form>
         </div>

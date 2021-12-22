@@ -77,6 +77,7 @@
       echo '<thead>
     <tr>
       <th scope="col">S.No</th>
+      <th scope="col">Model ID</th>
       <th scope="col">Address</th>
       <th scope="col">City</th>
       <th scope="col">Pincode</th>
@@ -86,7 +87,7 @@
   echo'</div>';
 
       while ($row = mysqli_fetch_array($result)) {
-        echo "<tr><td>" . $counter . "</td><td>" . $row['address'] . "</td><td>" . $row['city'] . "</td>   <td>" . $row['pin'] . "</td>   </tr>";
+        echo "<tr><td>" . $counter . "</td><td>" . $row['id'] . "</td><td>" . $row['address'] . "</td><td>" . $row['city'] . "</td>   <td>" . $row['pin'] . "</td>   </tr>";
         $counter++;
       }
 

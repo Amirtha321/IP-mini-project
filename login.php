@@ -33,7 +33,7 @@ if (isset($_POST['login'])) {
 </head>
 
 <body class=" bg-danger pt-5">
-  <div class="container mt-5 formcontainer bg-light border border-light rounded-3 w-25">
+  <div class="container mt-5 formcontainer bg-light border border-light rounded-3 w-50">
     <div class="container p-5 rounded-3">
       <h1 class="p-5 text-center">Login</h1>
       <form method="POST" action="">

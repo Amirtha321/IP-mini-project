@@ -32,8 +32,8 @@ if ($con->query($sql) === TRUE) {
 </head>
 
 <body class=" bg-primary pt-5">
-  <div class="container mt-5 formcontainer bg-light border border-light rounded-3 w-25">
-    <div class="container p-5 rounded-3">
+  <div class="container mt-5 formcontainer bg-light border border-light rounded-3 w-50 shadow-lg">
+    <div class="container p-5 rounded-3 ">
       <h1 class="p-5 text-center">Register</h1>
       <form method="POST" action="">
         <div class="mb-3">
@@ -52,7 +52,7 @@ if ($con->query($sql) === TRUE) {
         </div>
         <div class="row">
           <div class="mb-3">
-            <p class="form-text">Already have an account? <a href="login.php">Register</a></p>
+            <p class="form-text">Already have an account? <a href="login.php">Log In</a></p>
           </div>
 
 
