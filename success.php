@@ -15,7 +15,7 @@
         <div class="card text-center shadow p-5" style="width: 28rem;height: 18rem;">
             <div class="card-body">
                 <h1 class="card-title ">Order Successful</h1>
-                <h5 class="card-text p-3">Your booking id: 1904567  </h5>
+                <h5 class="card-text p-3">Your booking id: <?php echo(rand(10000,100000));?>  </h5>
                 <a href="home.php" class="btn btn-primary">Go to Home</a>
             </div>
         </div>

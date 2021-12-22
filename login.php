@@ -4,18 +4,13 @@ session_start();
 
 if (isset($_POST['login'])) {
   $name = mysqli_real_escape_string($con, $_POST["name"]);
-  // $email = mysqli_real_escape_string($con, $_POST['email']);
   $pwd = mysqli_real_escape_string($con, $_POST['password']);
   $pwd = hash('sha256', $pwd);
   $query = "SELECT * FROM customers WHERE name='$name' && password='$pwd'";
   $result = mysqli_query($con, $query);
   $num = mysqli_num_rows($result);
 
-  // $email = $_POST["email"];
-  // $pwd =  password_hash($_POST["password"], PASSWORD_DEFAULT);
-  // $sql = "SELECT * FROM customers WHERE email='$email' && password='$pwd'";
-  // $result = mysqli_query($con, $sql);
-  //       $num = mysqli_num_rows($result);     
+  
   if ($num == 1) {
     $_SESSION["uname"] = $name;
     header('location:home.php');

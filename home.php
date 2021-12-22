@@ -1,9 +1,9 @@
 <?php
 
 session_start();
-if (!isset($_SESSION['uname'])) {
-  header('location:login.php');
-}
+// if (!isset($_SESSION['uname'])) {
+//   header('location:login.php');
+// }
 
 ?>
 
@@ -39,15 +39,23 @@ if (!isset($_SESSION['uname'])) {
               Account
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li>
-                <p class="dropdown-item">Welcome,<?php
+              <?php
+              if (isset($_SESSION['uname'])) {
+                echo ' <li>
+                <p class="dropdown-item">Welcome,
 
-                                                  echo "$_SESSION[uname]";
-                                                  ?></p>
+                                                  '. $_SESSION["uname"].'
+                                                  </p>
               </li>
               <li><a class="dropdown-item" href="orders.php">My orders</a></li>
-              <li><a class="dropdown-item" href="login.php" >Log out</a></li>
-              <!-- onclick="<?php //session_unset();?> -->
+              <li><a class="dropdown-item" href="logout.php" >Log out</a></li>';
+              }
+              else{
+               echo' <li><a class="dropdown-item" href="register.php">Register</a></li>
+              <li><a class="dropdown-item" href="login.php" >Log In</a></li>';
+              }
+              ?>
+
 
 
 
