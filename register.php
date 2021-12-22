@@ -50,6 +50,11 @@ if ($con->query($sql) === TRUE) {
           <label for="exampleInputPassword1" class="form-label">Password</label>
           <input type="password" name="password" class="form-control" id="exampleInputPassword1">
         </div>
+        <div class="row">
+          <div class="mb-3">
+            <p class="form-text">Already have an account? <a href="login.php">Register</a></p>
+          </div>
+
 
         <button type="submit" name="register" class="btn btn-primary">Submit</button>
       </form>

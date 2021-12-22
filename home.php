@@ -41,11 +41,14 @@ if (!isset($_SESSION['uname'])) {
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
               <li>
                 <p class="dropdown-item">Welcome,<?php
-                  
-                  echo "$_SESSION[uname]";
-                  ?></p> </li>
+
+                                                  echo "$_SESSION[uname]";
+                                                  ?></p>
+              </li>
               <li><a class="dropdown-item" href="orders.php">My orders</a></li>
-              <li><a class="dropdown-item" href="login.php">Log out</a></li>
+              <li><a class="dropdown-item" href="login.php" >Log out</a></li>
+              <!-- onclick="<?php //session_unset();?> -->
+
 
 
             </ul>

@@ -37,7 +37,7 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-blue bg-dark ps-5 sticky-lg-top">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark ps-5 sticky-lg-top">
     <div class="container-fluid">
       <a class="navbar-brand h1" href="#">CARS</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -66,20 +66,37 @@
     <div class="container">
       <?php
       session_start();
-
+      if (isset($_SESSION['phone'])){
+      $phno = $_SESSION['phone'];
       include 'config.php';
-      $sql = "SELECT * FROM orders WHERE phone = $_SESSION['phone'] ";
+      $sql = "SELECT * FROM orders WHERE phone = $phno ";
       $result = mysqli_query($con, $sql);
-      echo mysqli_num_rows($result);
+      $counter = 1;
+      echo '<div class = "container p-5" ><h1>Orders List</h1>';
+      echo '<table class="table table-striped table-bordered ">';
+      echo '<thead>
+    <tr>
+      <th scope="col">S.No</th>
+      <th scope="col">Address</th>
+      <th scope="col">City</th>
+      <th scope="col">Pincode</th>
+      
+    </tr>
+  </thead>';
+  echo'</div>';
 
-      echo '<table class="table">'; 
-
-      while ($row = mysqli_fetch_array($result)) {   
-        echo "<tr><td>" . $row['address'] . "</td><td>" . $row['city'] . "</td>   <td>" . $row['pin'] . "</td>   </tr>"; 
+      while ($row = mysqli_fetch_array($result)) {
+        echo "<tr><td>" . $counter . "</td><td>" . $row['address'] . "</td><td>" . $row['city'] . "</td>   <td>" . $row['pin'] . "</td>   </tr>";
+        $counter++;
       }
 
-      echo "</table>"; 
+      echo "</table>";
       mysqli_close($con);
+    }
+    else{
+      echo "<h1>No entries</h1>";
+    }
+      
       ?>
     </div>
   </section>
