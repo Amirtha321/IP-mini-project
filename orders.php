@@ -49,7 +49,7 @@
         $counter = 1;
         echo '<div class = "container p-5" ><h1 class="p-3">Orders List</h1>';
         echo '<table class="table  table-striped table-bordered  border border-dark">';
-        echo '<thead class="bg-primary">
+        echo '<thead class="bg-dark text-white">
     <tr>
       <th scope="col">S.No</th>
       <th scope="col">Model ID</th>
