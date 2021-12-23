@@ -9,10 +9,10 @@
   <title>orders</title>
 </head>
 
-<body>
+<body >
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark ps-5 sticky-lg-top">
     <div class="container-fluid">
-      <a class="navbar-brand h1" href="#">CARS</a>
+      <a class="navbar-brand h1" href="#">FLASH CARS</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -46,15 +46,14 @@
         $result = mysqli_query($con, $sql);
         $counter = 1;
         echo '<div class = "container p-5" ><h1 class="p-3">Orders List</h1>';
-        echo '<table class="table table-striped table-bordered ">';
-        echo '<thead>
+        echo '<table class="table  table-striped table-bordered  border border-dark">';
+        echo '<thead class="bg-primary">
     <tr>
       <th scope="col">S.No</th>
       <th scope="col">Model ID</th>
       <th scope="col">Address</th>
       <th scope="col">City</th>
       <th scope="col">Pincode</th>
-      
     </tr>
   </thead>';
         echo '</div>';

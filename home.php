@@ -37,7 +37,7 @@ session_start();
               <?php
               if (isset($_SESSION['uname'])) {
                 echo ' <li>
-                <p class="dropdown-item">Welcome, ' . $_SESSION["uname"] . '  </p>
+                <h3 class="dropdown-item ">Welcome, ' . $_SESSION["uname"] . '  </h3>
               </li>
               <li><a class="dropdown-item" href="orders.php">My orders</a></li>
               <li><a class="dropdown-item" href="logout.php" >Log out</a></li>';
