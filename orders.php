@@ -39,10 +39,12 @@
     <div class="container">
       <?php
       session_start();
-      if (isset($_SESSION['phone'])) {
-        $phno = $_SESSION['phone'];
+      if (isset($_SESSION['uname'])) {
+  
+        $username = $_SESSION['uname'];
+      
         include 'config.php';
-        $sql = "SELECT * FROM orders WHERE phone = $phno ";
+        $sql = "SELECT * FROM orders WHERE user='$username'";
         $result = mysqli_query($con, $sql);
         $counter = 1;
         echo '<div class = "container p-5" ><h1 class="p-3">Orders List</h1>';

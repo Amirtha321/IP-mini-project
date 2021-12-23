@@ -4,13 +4,14 @@ $car_name = $_GET['car'];
 include 'config.php';
 session_start();
 if (isset($_POST['order'])) {
+  $user = $_SESSION["uname"];
   $phone = $_POST['phone'];
   $address = $_POST['address'];
   $city = $_POST["city"];
   $pin = $_POST["pin"];
 
 
-  $sql = "INSERT INTO orders(phone, address, city, pin) VALUES ('$phone','$address','$city','$pin')";
+  $sql = "INSERT INTO orders( user,phone, address, city, pin) VALUES ('$user','$phone','$address','$city','$pin')";
   if ($con->query($sql) === TRUE) {
     $_SESSION['phone'] = $phone;
     header('location: success.php');

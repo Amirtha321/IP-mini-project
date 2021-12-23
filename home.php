@@ -225,7 +225,7 @@ session_start();
 
       <div class="row justify-content-center">
         <div class="col-lg-8 col-xl-7">
-          <form id="contactForm">
+          <form id="contactForm"> 
 
             <div class="form-floating mb-3">
               <input class="form-control" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
