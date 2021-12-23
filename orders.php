@@ -9,7 +9,7 @@
   <title>orders</title>
 </head>
 
-<body >
+<body>
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark ps-5 sticky-lg-top">
     <div class="container-fluid">
       <a class="navbar-brand h1" href="#">FLASH CARS</a>
@@ -40,9 +40,9 @@
       <?php
       session_start();
       if (isset($_SESSION['uname'])) {
-  
+
         $username = $_SESSION['uname'];
-      
+
         include 'config.php';
         $sql = "SELECT * FROM orders WHERE user='$username'";
         $result = mysqli_query($con, $sql);
@@ -59,18 +59,18 @@
     </tr>
   </thead>';
         echo '</div>';
+        if ($result == True) {
+          while ($row = mysqli_fetch_array($result)) {
+            echo "<tr><td>" . $counter . "</td><td>" .(rand(100,1000)) . "</td><td>" . $row['address'] . "</td><td>" . $row['city'] . "</td>   <td>" . $row['pin'] . "</td>   </tr>";
+            $counter++;
+          }
 
-        while ($row = mysqli_fetch_array($result)) {
-          echo "<tr><td>" . $counter . "</td><td>" . $row['id'] . "</td><td>" . $row['address'] . "</td><td>" . $row['city'] . "</td>   <td>" . $row['pin'] . "</td>   </tr>";
-          $counter++;
+          echo "</table>";
+          mysqli_close($con);
+        } else {
+          echo '<center><h1 class="p-5">No entries</h1></center>';
         }
-
-        echo "</table>";
-        mysqli_close($con);
-      } else {
-        echo '<center><h1 class="p-5">No entries</h1></center>';
       }
-
       ?>
     </div>
   </section>
